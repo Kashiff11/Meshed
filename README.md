@@ -14,7 +14,7 @@ https://wireframe.cc/pro/pp/73345e717381682
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+https://wireframe.cc/pro/pp/3f2806c84381738
 
 ## API and Data Sample
 
