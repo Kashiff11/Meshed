@@ -10,7 +10,7 @@ Users will be able add (create), complete (delete), and modify (change) their to
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://wireframe.cc/pro/pp/73345e717381682
 
 ## Component Hierarchy
 
@@ -97,7 +97,7 @@ Airtable API
 
 ### Weaknesses:
 
-- Prioritization: I continue to focus on some of the superficial aspects of the project (i.e. styling, button placement). Scheduling will be crucially  important.
+- Prioritization: I continue to focus on some of the superficial aspects of the project (i.e. styling, button placement). Scheduling will be crucially important.
 
 ### Opportunities:
 
