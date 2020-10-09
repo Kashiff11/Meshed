@@ -49,7 +49,6 @@ Airtable API
 }
 ```
 
-
 #### MVP
 
 - Create UI that allows creating, reading, updating, and deleting from API.
@@ -66,32 +65,29 @@ Airtable API
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| Oct 8-9 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| Oct 9    | Project Approval                                   | Incomplete |
-| Oct 10-11    | CRUD Functionality Complete      | Incomplete |
-| July 14    | Components and Routing Complete                           | Incomplete 
-| Oct 13   | MVP Goals Complete                         | Incomplete |
-| Oct 14   | Styling Complete                       | Incomplete |
-| Oct 14-15    | Post MVP                                               | Incomplete |
+| Day       | Deliverable                                        | Status     |
+| --------- | -------------------------------------------------- | ---------- |
+| Oct 8-9   | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| Oct 9     | Project Approval                                   | Incomplete |
+| Oct 10-11 | CRUD Functionality Complete                        | Incomplete |
+| Oct 12    | Components and Routing Complete                    | Incomplete |
+| Oct 13    | MVP Goals Complete                                 | Incomplete |
+| Oct 14    | Styling Complete                                   | Incomplete |
+| Oct 14-15 | Post MVP                                           | Incomplete |
 | Oct 16    | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component              | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------- | :------: | :------------: | :-----------: | :---------: |
+| Creating README        |    H     |      5hrs      |     5hrs      |    5hrs     |
+| Working with API       |    L     |      2hrs      |     0hrs      |    0hrs     |
+| CRUD Functionality     |    H     |     10hrs      |     0hrs      |    0hrs     |
+| Components and Routing |    H     |     10hrs      |     0hrs      |    0hrs     |
+| Review/Complete MVP    |    H     |      5hrs      |     0hrs      |    0hrs     |
+| Styling Complete       |    M     |      4hrs      |     0hrs      |    0hrs     |
+| Post MVP Additions     |    L     |      6hrs      |     0hrs      |    0hrs     |
+| Total                  |    H     |     42hrs      |     0hrs      |    0hrs     |
 
 ## SWOT Analysis
 
