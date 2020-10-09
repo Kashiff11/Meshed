@@ -18,7 +18,36 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+Airtable API
+
+```
+{
+    "records": [
+        {
+            "id": "reciXzjpcimF1dZ7n",
+            "fields": {
+                "family-member": "Kashiff",
+                "To-Do Item": "Complete P2 project",
+                "date": "2020-10-23",
+                "Date Created": "2020-10-04T19:56:29.000Z",
+                "task": "Work"
+            },
+            "createdTime": "2020-10-04T19:56:29.000Z"
+        },
+        {
+            "id": "recmpI0ryLsKlRR69",
+            "fields": {
+                "family-member": "Hira",
+                "To-Do Item": "Bi-weekly grocery shopping",
+                "date": "2020-10-20",
+                "Date Created": "2020-10-04T19:56:29.000Z",
+                "task": "Shopping"
+            },
+            "createdTime": "2020-10-04T19:56:29.000Z"
+        }
+    ]
+}
+```
 
 ### MVP/PostMVP
 
