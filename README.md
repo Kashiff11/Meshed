@@ -49,24 +49,20 @@ Airtable API
 }
 ```
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
 #### MVP
 
-_These are examples only. Replace with your own MVP features._
+- Create UI that allows creating, reading, updating, and deleting from API.
 
-- Find and use external api
-- Render data on page
-- Allow user to choose favorites
+-Create an apealing home page with buttons for different routes that users can select from.
+
+- Create a (1) route for creating to-do items (2) route for viewing to-do items (3) a button for deleting completed tasks.
 
 #### PostMVP
 
-_These are examples only. Replace with your own Post-MVP features._
+- Create a route for a new user to register.
 
-- Add second API
-- Use local storage to save user favorites
+- Create a sign in page.
 
 ## Project Schedule
 
@@ -76,13 +72,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day        | Deliverable                                        | Status     |
 | ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Oct 8-9 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| Oct 9    | Project Approval                                   | Incomplete |
+| Oct 10-11    | CRUD Functionality Complete      | Incomplete |
+| July 14    | Components and Routing Complete                           | Incomplete 
+| Oct 13   | MVP Goals Complete                         | Incomplete |
+| Oct 14   | Styling Complete                       | Incomplete |
+| Oct 14-15    | Post MVP                                               | Incomplete |
+| Oct 16    | Presentations                                      | Incomplete |
 
 ## Timeframes
 
