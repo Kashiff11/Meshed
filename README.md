@@ -53,7 +53,7 @@ Airtable API
 
 - Create UI that allows creating, reading, updating, and deleting from API.
 
--Create an apealing home page with buttons for different routes that users can select from.
+- Create an apealing home page with buttons for different routes that users can select from.
 
 - Create a (1) route for creating to-do items (2) route for viewing to-do items (3) a button for deleting completed tasks.
 
@@ -93,8 +93,16 @@ Airtable API
 
 ### Strengths:
 
+- Resourceful: I have improved in my ability to look for answers through different means. I will use my personal connections within and outside the GA community to seek out feedback and direction (when needed) through out this project.
+
 ### Weaknesses:
+
+- Prioritization: I continue to focus on some of the superficial aspects of the project (i.e. styling, button placement). Scheduling will be crucially  important.
 
 ### Opportunities:
 
+- Knowledge: I continue to only have surface level knowledge of many concepts that we have learned. I'll use my schedule to focus on learning the concepts I need to fulfill minimal requirements before diving deeper into advanced concepts.
+
 ### Threats:
+
+- Imposter Syndrome: continue to take some time daily to read "Elequent JavaScript".
