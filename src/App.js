@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Link } from "react-router-dom";
+import Create from "./Create";
 import './App.css';
 
 function App() {
@@ -9,18 +10,19 @@ function App() {
         <div><h4>meshedFamily</h4></div>    
       </header>
       <banner className="App-header">Banner</banner>
-      <main className="button-container">
-        <div className="button">
-          <h2 className = "button-text">Create</h2>
-        </div>
-        <div className="button">
-          <h2 className = "button-text">Inspiration</h2>
-        </div>
-        <div className="button">
-          <h2 className = "button-text">View</h2>
-        </div>
+      <nav className="button-container">
+        <Link className="button" to="/create"></Link>
+        <Link className="button" to="/inspiration"></Link>
+        <Link className="button" to="/view"></Link>
+      </nav>
+      <main>
+        <Route path="/create">
+          <Create/>
+        </Route>
       </main>
-      <footer>To come</footer>
+      
+      
+      <footer>FOOTER TEXT HERE</footer>
     </div>
   );
 }
