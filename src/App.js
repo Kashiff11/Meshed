@@ -29,11 +29,11 @@ function App() {
       <header className="App-header">Banner</header>
       <Route exact path="/"><Home/></Route>
       <main>
-        <Route path="/create">
+        <Route exact path="/create">
           <Create getTasks={getTasks} setGetTasks={setGetTasks}/>
         </Route>
-        <Route path="/view">
-          <View tasks={tasks} />
+        <Route exact path="/view">
+          <View tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks}/>
         </Route>
       </main>
       
