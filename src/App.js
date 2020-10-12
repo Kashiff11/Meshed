@@ -28,8 +28,12 @@ function App() {
       <header className="App-header">Banner</header>
       <Route exact path="/"><Home/></Route>
       <main>
-        <Route path="/create"><Create /></Route>
-        <Route path="/view"><View tasks={tasks}/></Route>
+        <Route path="/create">
+          <Create />
+        </Route>
+        <Route path="/view">
+          <View tasks={tasks && tasks} />
+        </Route>
       </main>
       
       

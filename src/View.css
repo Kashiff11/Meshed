@@ -1,0 +1,8 @@
+.taskContainer {
+  background-color: white;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 2px;
+  border: 1px black;
+}
