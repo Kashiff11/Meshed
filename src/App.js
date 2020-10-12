@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [getTasks, setGetTasks] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -20,7 +21,7 @@ function App() {
       setTasks(response.data.records)
     };
     getData();
-  }, []);
+  }, [getTasks]);
 
   return (
     <div className="App">
@@ -29,10 +30,10 @@ function App() {
       <Route exact path="/"><Home/></Route>
       <main>
         <Route path="/create">
-          <Create />
+          <Create getTasks={getTasks} setGetTasks={setGetTasks}/>
         </Route>
         <Route path="/view">
-          <View tasks={tasks && tasks} />
+          <View tasks={tasks} />
         </Route>
       </main>
       
