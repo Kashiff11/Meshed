@@ -5,14 +5,15 @@ import axios from "axios";
 
 function View(props) {
 
-  const handleDelete = async () => {
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/family1/${props.tasks.id}`;
+  const handleDelete = async (taskID) => {
+    console.log(props)
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/family1/${taskID}`;
     await axios.delete(airtableURL, {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
       },
     });
-    props.setGetTasks(!props.getReviews);
+    props.setGetTasks(!props.getTasks);
   };
 
   return (
@@ -24,7 +25,7 @@ function View(props) {
           <p>{task.fields.to_do_item}</p>
           <p>{task.fields.date}</p>
           <p>{task.fields.additional_notes}</p>
-          <button onClick={handleDelete}>TASK COMPLETED</button>
+          <button onClick={() => handleDelete(task.id)}>TASK COMPLETED</button>
           <Link to={`/update/${task.id}`}>
             <button>EDIT</button>
           </Link>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios"
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Create from "./Create";
 import Home from "./Home";
 import View from "./View"
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="logo-container"><div><h5>meshedFamily</h5></div></header>
+      <header className="logo-container"><div><Link to="/"><h5>meshedFamily</h5></Link></div></header>
       <header className="App-header">Banner</header>
       <Route exact path="/"><Home/></Route>
       <main>
