@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Create.css"
+import { withRouter } from "react-router-dom"
 
 function Edit(props) {
 
-  const [family_member, setFamily_member] = useState(props.task.fields.family_member);
-  const [task_type, setTask_type] = useState(props.task.fields.task_type);
-  const [to_do_item, setTo_do_item] = useState(props.task.fields.to_do_item);
-  const [date, setDate] = useState(props.task.fields.date);
-  const [additional_notes, setAdditional_notes] = useState(props.task.fields.additional_notes);
+  const [family_member, setFamily_member] = useState("");
+  const [task_type, setTask_type] = useState("");
+  const [to_do_item, setTo_do_item] = useState("");
+  const [date, setDate] = useState("");
+  const [additional_notes, setAdditional_notes] = useState("");
+
+  useEffect(() => {
+    const updateTask = props.tasks.find((task) => {
+      return task.id === props.match.params.task
+    })
+    
+      setFamily_member(updateTask.fields.family_member);
+      setTask_type(updateTask.fields.task_type);
+      setTo_do_item(updateTask.fields.to_do_item)
+      setDate(updateTask.fields.date)
+      setAdditional_notes(updateTask.fields.additional_notes)
+    
+  }, []);
 
   const handleSubmit = async (event) => {
 
@@ -85,4 +99,4 @@ function Edit(props) {
   )
 }
 
-export default Edit;
+export default withRouter(Edit);

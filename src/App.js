@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Create from "./Create";
 import Home from "./Home";
 import View from "./View"
+import Edit from "./Edit"
 import './App.css';
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route exact path="/view">
           <View tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks}/>
+        </Route>
+        <Route exact path="/update/:task">
+            <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
         </Route>
       </main>
       

@@ -14,10 +14,9 @@ function View(props) {
           <p>{task.fields.to_do_item}</p>
           <p>{task.fields.date}</p>
           <p>{task.fields.additional_notes}</p>
-          <Edit task={task} getTasks={props.getTasks} setGetTasks={props.setGetTasks} />
-          {/* <Link to="/update">
-            <button onClick={() => console.log(`hello`)}>EDIT</button>
-          </Link> */}
+          <Link to={`/update/${task.id}`}>
+            <button>EDIT</button>
+          </Link>
         </div>
       )}
     </div>
