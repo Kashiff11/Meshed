@@ -14,13 +14,7 @@ function Create(props) {
 
     event.preventDefault();
 
-    const fields = {
-      family_member,
-      task_type,
-      to_do_item,
-      date,
-      additional_notes,
-    };
+    const fields = {family_member, task_type, to_do_item, date, additional_notes, };
 
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/family1/`;
     
@@ -36,51 +30,31 @@ function Create(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="formContainer">
-      <label htmlFor="family_member">Family Member</label>
-      <input
-        name="family_member"
-        type="text"
-        value={family_member}
-        onChange={(event) => setFamily_member(event.target.value)}
-      />
-      <select
-        name="task_type"
-        value={task_type}
-        onChange={(event) => setTask_type(event.target.value)}
-      >
-        <option></option>
-        <option>School</option>
-        <option>Shopping</option>
-        <option>Bills</option>
-        <option>Health</option>
-        <option>Chore</option>
-        <option>Travel</option>
-        <option>Work</option>
-      </select>
-      <label htmlFor="to_do_item">To Do Item</label>
-      <input
-        name="to_do_item"
-        type="text"
-        value={to_do_item}
-        onChange={(event) => setTo_do_item(event.target.value)}
-      />
-      <label htmlFor="date">Due Date</label>
-      <input
-        name="date"
-        type="date"
-        value={date}
-        onChange={(event) => setDate(event.target.value)}
-      />
-      <label htmlFor="additional_notes">Additional Notes</label>
-      <input
-        name="additional_notes"
-        type="text"
-        value={additional_notes}
-        onChange={(event) => setAdditional_notes(event.target.value)}
-      />
-      <button type="submit">SUBMIT</button>
-    </form>
+    <div className="formContainer">
+      <form className="form" onSubmit={handleSubmit}>
+        <label htmlFor="family_member">Family Member</label>
+        <input name="family_member" type="text" value={family_member} onChange={(event) => setFamily_member(event.target.value)} />
+        <div>Task Category
+            <select className="selector" name="task_type" value={task_type} onChange={(event) => setTask_type(event.target.value)}>
+              <option></option>  
+              <option>School</option>
+              <option>Shopping</option>
+              <option>Bills</option>
+              <option>Health</option>
+              <option>Chore</option>
+              <option>Travel</option>
+              <option>Work</option>
+            </select>
+        </div>
+          <label htmlFor="to_do_item">To Do Item</label>
+          <input name="to_do_item" type="text" value={to_do_item} onChange={(event) => setTo_do_item(event.target.value)}/>
+          <label htmlFor="date">Due Date</label>
+          <input name="date" type="date" value={date} onChange={(event) => setDate(event.target.value)}/>
+          <label htmlFor="additional_notes">Notes</label>
+          <input name="additional_notes" type="text" value={additional_notes} onChange={(event) => setAdditional_notes(event.target.value)}/>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
   )
 }
 

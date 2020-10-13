@@ -1,48 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .App {
+  background-image: url(./images/pexels-bongkarn-thanyakij-3751600\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
   text-align: center;
+  height: 100%;
 }
 
-.logo-container {
-  position: fixed;
-  background-color: white;
-  width: 100vw;
-  height: 45px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 35vh;
-  display: flex;
+.navigationBar {
+  display:flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 20vw;
+  height: 100vh;
 }
 
-.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: white;
-  height: 60vh;
+.websiteName {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
   color: white;
+  text-decoration: none;
+}
+
+
+.main {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 100vh;
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 25%;
-  background: #282c34;
-}
-
-footer {
-  width: 100vw;
-  height: 4vh;
-  background-color: #282c34;  
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
   color: white;
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
 }
 
-
+.taskContainer {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+}

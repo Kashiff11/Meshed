@@ -26,23 +26,23 @@ function App() {
 
   return (
     <div className="App">
-      <header className="logo-container"><div><Link to="/"><h5>meshedFamily</h5></Link></div></header>
-      <header className="App-header">Banner</header>
-      <Route exact path="/"><Home/></Route>
-      <main>
-        <Route exact path="/create">
-          <Create getTasks={getTasks} setGetTasks={setGetTasks}/>
+      <div className="navigationBar">
+        <Link to="/" style={{textDecoration: "none"}}><span className="websiteName">meshedFamily</span></Link>
+        <Route exact path="/">
+          <Home />
         </Route>
+        <Route exact path="/update/:task">
+          <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
+        </Route>
+      </div>
+      <div className="main">
         <Route exact path="/view">
           <View tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks}/>
         </Route>
-        <Route exact path="/update/:task">
-            <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
+        <Route exact path="/create">
+          <Create getTasks={getTasks} setGetTasks={setGetTasks}/>
         </Route>
-      </main>
-      
-      
-      <footer>FOOTER TEXT HERE</footer>
+      </div>
     </div>
   );
 }

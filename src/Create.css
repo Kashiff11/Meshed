@@ -1,10 +1,36 @@
-.formContainer {
+.form {
   display: flex;
-  justify-content: space-around;
-  background-color: white;
-  max-width: 80vw;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 2px;
-  border: 1px black;
+  flex-direction: column;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2rem;
+  width: 90%;
+}
+
+.selector {
+  display: block;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 5%;
+  height: 2rem;
+  width: 20vw;
+  font: 2rem;
+}
+
+input {
+  justify-content: center;
+  margin: 7%;
+  height: 2rem;
+  width: 20vw;
+  font: 2rem;
+  border-radius: 10px;
+}
+
+button {
+  justify-content: center;
+  margin: 7%;
+  height: 3rem;
+  width: 20vw;
+  font: 2rem;
+  border-radius: 10px;
 }
