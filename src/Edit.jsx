@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Create.css"
-import { withRouter } from "react-router-dom"
+import "./Create.css";
+import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Edit(props) {
 
@@ -15,6 +16,7 @@ function Edit(props) {
     const updateTask = props.tasks.find((task) => {
       return task.id === props.match.params.task
     })
+
     
       setFamily_member(updateTask.fields.family_member);
       setTask_type(updateTask.fields.task_type);
@@ -25,9 +27,9 @@ function Edit(props) {
   }, []);
 
   const handleSubmit = async (event) => {
-
+    console.log(props.match.params.task)
     event.preventDefault();
-
+    
     const fields = {
       family_member,
       task_type,
@@ -35,8 +37,8 @@ function Edit(props) {
       date,
       additional_notes,
     };
-
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/family1/${props.task.id}`;
+   //props.tasks.id
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/family1/${props.match.params.task}`;
     
     await axios.put(airtableURL, { fields }, { headers: { Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}` } });
     
