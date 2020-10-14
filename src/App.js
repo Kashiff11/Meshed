@@ -29,9 +29,6 @@ function App() {
         <Link to="/" style={{ textDecoration: "none" }}><span className="websiteName">Meshed Up Family</span></Link>
         <Link className="button" to="/create">Create Tasks</Link>
         <Link className="button" to="/view">View Tasks</Link>
-        <Route exact path="/update/:task">
-          <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
-        </Route>
       </div>
       <div className="main">
         <Route exact path="/view">
@@ -39,6 +36,9 @@ function App() {
         </Route>
         <Route exact path="/create">
           <Create getTasks={getTasks} setGetTasks={setGetTasks}/>
+        </Route>
+        <Route exact path="/update/:task">
+          <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
         </Route>
       </div>
     </div>

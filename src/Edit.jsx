@@ -16,12 +16,13 @@ function Edit(props) {
       return task.id === props.match.params.task
     })
 
-    
+    if (updateTask) {
       setFamily_member(updateTask.fields.family_member);
       setTask_type(updateTask.fields.task_type);
       setTo_do_item(updateTask.fields.to_do_item)
       setDate(updateTask.fields.date)
       setAdditional_notes(updateTask.fields.additional_notes)
+    }
     
   }, []);
 
@@ -48,15 +49,17 @@ function Edit(props) {
 
 
   return (
-    <form onSubmit={handleSubmit} className="formContainer">
+    <div className="editDiv">
+    <form onSubmit={handleSubmit} className="editFormContainer">
       <label htmlFor="family_member">Family Member</label>
       <input
         name="family_member"
         type="text"
         value={family_member}
         onChange={(event) => setFamily_member(event.target.value)}
-      />
+      /><span className="editTaskCategory">Task Category</span>
       <select
+        className="editSelectBar"
         name="task_type"
         value={task_type}
         onChange={(event) => setTask_type(event.target.value)}
@@ -91,8 +94,9 @@ function Edit(props) {
         value={additional_notes}
         onChange={(event) => setAdditional_notes(event.target.value)}
       />
-      <button type="submit">SUBMIT</button>
+      <button className="editSubmitButton" type="submit">SUBMIT</button>
     </form>
+    </div>
   )
 }
 

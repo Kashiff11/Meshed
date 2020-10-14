@@ -34,7 +34,7 @@ function Create(props) {
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="family_member">Family Member</label>
         <input name="family_member" type="text" value={family_member} onChange={(event) => setFamily_member(event.target.value)} />
-        <div>Task Category
+        <div className="categorySelector">Task Category
             <select className="selector" name="task_type" value={task_type} onChange={(event) => setTask_type(event.target.value)}>
               <option></option>  
               <option>School</option>

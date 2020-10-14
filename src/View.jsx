@@ -16,7 +16,7 @@ function View(props) {
   };
 
   return (
-    <div clasName="taskList"> 
+  <div className="taskList">
       {props.tasks.map((task) =>
         <div className="taskContainer">
           <p>Who: {task.fields.family_member}</p>
@@ -24,13 +24,13 @@ function View(props) {
           <p>Task: {task.fields.to_do_item}</p>
           <p>Due Date: {task.fields.date}</p>
           <p>Notes: {task.fields.additional_notes}</p>
-          <button className="viewPageButton" onClick={() => handleDelete(task.id)}>TASK COMPLETED</button>
-          <Link to={`/update/${task.id}`}>
-            <button className="viewPageButton">EDIT</button>
+          <button onClick={() => handleDelete(task.id)}>COMPLETED</button>
+          <Link className="editButton" to={`/update/${task.id}`}>
+            <button>EDIT</button>
           </Link>
         </div>
       )}
-    </div>
+  </div>    
   )
 }
 
