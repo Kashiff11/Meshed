@@ -16,17 +16,17 @@ function View(props) {
   };
 
   return (
-    <div> 
+    <div clasName="taskList"> 
       {props.tasks.map((task) =>
         <div className="taskContainer">
-          <p>{task.fields.family_member}</p>
-          <p>{task.fields.task_type}</p>
-          <p>{task.fields.to_do_item}</p>
-          <p>{task.fields.date}</p>
-          <p>{task.fields.additional_notes}</p>
-          <button onClick={() => handleDelete(task.id)}>TASK COMPLETED</button>
+          <p>Who: {task.fields.family_member}</p>
+          <p>Category: {task.fields.task_type}</p>
+          <p>Task: {task.fields.to_do_item}</p>
+          <p>Due Date: {task.fields.date}</p>
+          <p>Notes: {task.fields.additional_notes}</p>
+          <button className="viewPageButton" onClick={() => handleDelete(task.id)}>TASK COMPLETED</button>
           <Link to={`/update/${task.id}`}>
-            <button>EDIT</button>
+            <button className="viewPageButton">EDIT</button>
           </Link>
         </div>
       )}

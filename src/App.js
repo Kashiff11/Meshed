@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from "axios"
 import { Route, Link } from "react-router-dom";
 import Create from "./Create";
-import Home from "./Home";
 import View from "./View"
 import Edit from "./Edit"
 import './App.css';
@@ -27,10 +26,9 @@ function App() {
   return (
     <div className="App">
       <div className="navigationBar">
-        <Link to="/" style={{textDecoration: "none"}}><span className="websiteName">meshedFamily</span></Link>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Link to="/" style={{ textDecoration: "none" }}><span className="websiteName">Meshed Up Family</span></Link>
+        <Link className="button" to="/create">Create Tasks</Link>
+        <Link className="button" to="/view">View Tasks</Link>
         <Route exact path="/update/:task">
           <Edit tasks={tasks} getTasks={getTasks} setGetTasks={setGetTasks} />
         </Route>

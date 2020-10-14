@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-.App {
+body {
   background-image: url(./images/pexels-bongkarn-thanyakij-3751600\ \(1\).jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  text-align: center;
+}
+
+.App {
   height: 100%;
+  width: 100%;
 }
 
 .navigationBar {
+  position: fixed;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  width: 20vw;
-  height: 100vh;
+  align-items: center;
+  width: 20%;
+  height: 100%;
 }
 
 .websiteName {
   font-family: 'Architects Daughter', cursive;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: lighter;
   color: white;
   text-decoration: none;
 }
@@ -30,8 +35,8 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .button {
@@ -44,7 +49,16 @@
 }
 
 .taskContainer {
+
   background-color: white;
-  padding: 20px;
-  margin: 20px auto;
+  font-family: 'Architects Daughter', cursive;
+  opacity: 70%;
+  border-radius: 10px;
+  width: 70%
+}
+
+.taskList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
