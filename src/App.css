@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap");
 
 body {
-  background-image: url(./images/pexels-bongkarn-thanyakij-3751600\ \(1\).jpg);
+  background-image: url(./images/pexels-bongkarn-thanyakij-3751600\\(1\).jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -15,7 +17,7 @@ body {
 
 .navigationBar {
   position: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,16 +26,15 @@ body {
 }
 
 .websiteName {
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 1.6rem;
   font-weight: lighter;
   color: white;
   text-decoration: none;
 }
 
-
 .main {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -42,7 +43,7 @@ body {
 }
 
 .button {
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 1.5rem;
   color: white;
   display: block;
@@ -56,7 +57,7 @@ body {
   align-items: center;
   margin-top: 3%;
   background-color: white;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   opacity: 70%;
   border-radius: 10px;
   width: 100%;
@@ -82,14 +83,14 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 2rem;
   color: white;
   margin-top: 40%;
 }
 
 .editTaskCategory {
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 2rem;
   color: white;
 }
@@ -106,4 +107,28 @@ p {
   border-radius: 10px;
 }
 
+.introMainPage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+}
 
+.quoteStyle {
+  color: white;
+  background-color: ;
+}
+
+.introductionStyling {
+  color: white;
+}
+
+.personalLinks {
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 425px) {
+}
