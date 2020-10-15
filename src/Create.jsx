@@ -52,7 +52,7 @@ function Create(props) {
           <input name="date" type="date" value={date} onChange={(event) => setDate(event.target.value)}/>
           <label htmlFor="additional_notes">Notes</label>
           <input name="additional_notes" type="text" value={additional_notes} onChange={(event) => setAdditional_notes(event.target.value)}/>
-          <button type="submit">SUBMIT</button>
+          <button className="createButton" type="submit">SUBMIT</button>
         </form>
       </div>
   )

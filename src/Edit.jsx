@@ -73,7 +73,7 @@ function Edit(props) {
         <option>Travel</option>
         <option>Work</option>
       </select>
-      <label htmlFor="to_do_item">To Do Item</label>
+      <label className="labelToDoItem" htmlFor="to_do_item">To Do Item</label>
       <input
         name="to_do_item"
         type="text"
