@@ -35,7 +35,7 @@ function App() {
         headers: {
           "content-type":"application/octet-stream",
           "x-rapidapi-host":"quotes15.p.rapidapi.com",
-          "x-rapidapi-key":"7af320ac61mshc1924882f1c6503p1e8b90jsnf67f0a263cb2",
+          "x-rapidapi-key":`${process.env.REACT_APP_QUOTE_API_KEY}`,
           "useQueryString":true
         } 
       });
