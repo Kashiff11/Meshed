@@ -270,4 +270,28 @@ button {
   .selector {
     width: 80vw;
   }
+
+  .taskList {
+    margin: 0%;
+    width: 100vw;
+  }
+
+  .taskContainer {
+    margin: 5% auto;
+  }
+
+  .editFormContainer {
+    font-size: 1rem;
+    font-family: "Pridi", serif;
+    width: 100vw;
+  }
+
+  .editSelectBar {
+    width: 80vw;
+    height: 10vw;
+  }
+
+  .editSubmitButton {
+    height: 10vw;
+  }
 }
