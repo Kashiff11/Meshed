@@ -3,8 +3,8 @@ import React from 'react';
 const PersonalLinks = () => {
   return (
     <div className="logos">
-      <h3>pic</h3>
-      <h3>pic</h3>
+      <h4>Github</h4>
+      <h4>LinkedIn</h4>
     </div>
   );
 };

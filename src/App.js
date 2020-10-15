@@ -30,17 +30,17 @@ function App() {
 
   useEffect(() => {
     const getQuote = async () => {
-      const quotesAPIURL = `https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote`;
+      const quotesAPIURL = `https://quotes15.p.rapidapi.com/quotes/random/`;
       const response = await axios.get(quotesAPIURL, {
         headers: {
           "content-type":"application/octet-stream",
-          "x-rapidapi-host":"quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com",
+          "x-rapidapi-host":"quotes15.p.rapidapi.com",
           "x-rapidapi-key":"7af320ac61mshc1924882f1c6503p1e8b90jsnf67f0a263cb2",
           "useQueryString":true
         } 
       });
-      setQuote(response.data.author)
-      console.log(response.data.author)
+      setQuote(response.data)
+      console.log(response.data)
     }
     getQuote();
   }, []);
@@ -56,9 +56,9 @@ function App() {
       <div className="main">
         <div className="introMainPage">
           <Route exact path="/">
+            <div className="personalLinks"><PersonalLinks/></div>
             <div className="introQuote"><Quotes quote={quote}/></div>
             <div className="introIntroduction"><Introduction /></div>
-            <div className="personalLinks"><PersonalLinks/></div>
           </Route>
         </div>
         <Route exact path="/view">

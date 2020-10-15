@@ -9,9 +9,8 @@
 }
 
 .formContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
+  margin-right: 43%;
+  margin-top: 5%
 }
 
 .categorySelector {

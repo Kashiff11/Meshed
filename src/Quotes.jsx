@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Quotes = (props) => {
+  console.log(props.quote && props.quote.originator.name)
 
   return (
     <div className="quoteStyle">
-      <span>{props.quote}</span>
+      <h4>{props.quote && props.quote.content}</h4>
+      <h4>{props.quote && props.quote.originator.name}</h4>
     </div>
   );
 };
