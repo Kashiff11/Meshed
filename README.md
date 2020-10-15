@@ -51,11 +51,11 @@ Airtable API
 
 #### MVP
 
-- Create UI that allows creating, reading, updating, and deleting from API.
+- Design a UI that allows creating, reading, updating, and deleting from API.
 
 - Create an apealing home page with buttons for different routes that users can select from.
 
-- Create a (1) route for creating to-do items (2) route for viewing to-do items (3) a button for deleting completed tasks.
+- Create: (1) route for creating to-do items (2) route for viewing to-do items (3) a button for deleting completed tasks.
 
 #### PostMVP
 
@@ -63,15 +63,17 @@ Airtable API
 
 - Create a sign in page.
 
+- Add an inspiring quote API to add to the homepage
+
 ## Project Schedule
 
 | Day       | Deliverable                                        | Status     |
 | --------- | -------------------------------------------------- | ---------- |
-| Oct 8-9   | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| Oct 9     | Project Approval                                   | Incomplete |
-| Oct 10-11 | CRUD Functionality Complete                        | Incomplete |
-| Oct 12    | Components and Routing Complete                    | Incomplete |
-| Oct 13    | MVP Goals Complete                                 | Incomplete |
+| Oct 8-9   | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| Oct 9     | Project Approval                                   | Complete   |
+| Oct 10-11 | CRUD Functionality Complete                        | Complete   |
+| Oct 12    | Components and Routing Complete                    | Complete   |
+| Oct 13    | MVP Goals Complete                                 | Complete   |
 | Oct 14    | Styling Complete                                   | Incomplete |
 | Oct 14-15 | Post MVP                                           | Incomplete |
 | Oct 16    | Presentations                                      | Incomplete |
@@ -81,13 +83,13 @@ Airtable API
 | Component              | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
 | Creating README        |    H     |      5hrs      |     5hrs      |    5hrs     |
-| Working with API       |    L     |      2hrs      |     0hrs      |    0hrs     |
-| CRUD Functionality     |    H     |     10hrs      |     0hrs      |    0hrs     |
-| Components and Routing |    H     |     10hrs      |     0hrs      |    0hrs     |
-| Review/Complete MVP    |    H     |      5hrs      |     0hrs      |    0hrs     |
-| Styling Complete       |    M     |      4hrs      |     0hrs      |    0hrs     |
+| Working with API       |    L     |      2hrs      |     4hrs      |    4hrs     |
+| CRUD Functionality     |    H     |     10hrs      |     14hrs     |    14hrs    |
+| Components and Routing |    H     |     10hrs      |     10hrs     |    10hrs    |
+| Review/Complete MVP    |    H     |      5hrs      |     6hrs      |    6hrs     |
+| Styling Complete       |    M     |     10hrs      |     10hrs     |    10hrs    |
 | Post MVP Additions     |    L     |      6hrs      |     0hrs      |    0hrs     |
-| Total                  |    H     |     42hrs      |     0hrs      |    0hrs     |
+| Total                  |    H     |     42hrs      |     49hrs     |    49hrs    |
 
 ## SWOT Analysis
 
