@@ -77,28 +77,16 @@ p {
 
 .editFormContainer {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 100%;
-  font-family: "Architects Daughter", cursive;
-  font-size: 2rem;
-  color: white;
-  margin-top: 20%;
 }
 
 .editDiv {
-  margin-right: 30%;
-}
-
-.editSelectBar {
-  width: 20vw;
-  height: 3rem;
-  border-radius: 10px;
-}
-
-.editSubmitButton {
-  width: 20vw;
-  height: 3rem;
-  border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+  color: white;
+  font-size: x-large;
+  margin-right: 50%;
+  margin-top: 10%;
 }
 
 .introMainPage {
@@ -132,3 +120,7 @@ p {
   font-family: "Architects Daughter", cursive;
   font-size: x-large;
 }
+
+@media screen and (max-width: 375px) {
+
+  }
