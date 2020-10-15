@@ -24,7 +24,7 @@ function Edit(props) {
       setAdditional_notes(updateTask.fields.additional_notes)
     }
     
-  }, []);
+  }, [props.match.params.task, props.tasks]);
 
   const handleSubmit = async (event) => {
   
