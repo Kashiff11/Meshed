@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap");
 
 body {
-  background-image: url(./images/pexels-bongkarn-thanyakij-3751600\ \(1\).jpg);
+  background-image: url("./images/bodyimage.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -16,13 +16,12 @@ body {
 }
 
 .navigationBar {
-  position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
+  width: 15%;
   height: 100%;
+  margin-top: 20%;
+  margin-left: 3%;
 }
 
 .websiteName {
@@ -38,8 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
-  margin-left: 20%;
+  width: 85%;
 }
 
 .button {
@@ -63,22 +61,87 @@ body {
   border-radius: 10px;
   width: 100%;
   max-width: 40vw;
-  min-width: 30vw;
+  min-width: 20vw;
   padding: 2px;
 }
 
 .taskList {
-  margin-right: 35%;
+  margin-right: 50%;
 }
 
 p {
   margin: 1px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2rem;
+  width: 90%;
+}
+
+.formContainer {
+  margin-right: 50%;
+  margin-top: 5%;
+}
+
+.categorySelector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector {
+  display: block;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 5%;
+  height: 2rem;
+  width: 20vw;
+  font: 2rem;
+}
+
+input {
+  justify-content: center;
+  margin: 7%;
+  height: 3rem;
+  width: 20vw;
+  font: 2rem;
+  border-radius: 10px;
+}
+
+button {
+  justify-content: center;
+  margin: 1%;
+  height: 10%;
+  width: 80%;
+  font: 2rem;
+  border-radius: 10px;
+}
+
+.editButton {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  height: 10%;
+  width: 100%;
+  font: 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 .editFormContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.editSelectBar {
+  width: 20vw;
+  border-radius: 10px;
 }
 
 .editDiv {
@@ -98,22 +161,23 @@ p {
 .personalLinks {
   margin-left: 90%;
   color: white;
-  height: 20vh;
+  height: 20%;
   font-family: "Pridi", serif;
 }
 
 .quoteStyle {
   color: white;
-  height: 40vh;
+  height: 40%;
   width: 20%;
   font-family: "Pridi", serif;
   font-size: large;
+  margin-top: 15%;
   margin-left: 5%;
 }
 
 .introductionStyling {
   color: white;
-  height: 40vh;
+  height: 40%;
   width: 40%;
   margin-top: 10%;
   margin-left: 30%;
@@ -121,6 +185,89 @@ p {
   font-size: x-large;
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 414px) {
+  body {
+    display: block;
   }
+
+  .App {
+    display: block;
+  }
+
+  .navigationBar {
+    display: block;
+    width: 100%;
+    height: 10%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .websiteName {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Pridi", serif;
+    margin-left: 27px;
+    margin-top: 5px;
+  }
+
+  .button {
+    display: inline;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 12px;
+  }
+  .main {
+    display: block;
+  }
+
+  .introMainPage {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .introIntroduction {
+    width: 100vw;
+    height: 50vw;
+    margin-top: 50px;
+  }
+
+  .introductionStyling {
+    color: white;
+    font-family: "Architects Daughter", cursive;
+    font-size: large;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+
+  .quoteStyle {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+
+  .formContainer {
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .form {
+    font-size: 1rem;
+    font-family: "Pridi", serif;
+    width: 100vw;
+    margin-top: 10%;
+  }
+
+  input {
+    width: 80vw;
+    height: 8vw;
+    margin-top: 0.25%;
+  }
+
+  .selector {
+    width: 80vw;
+  }
+}
