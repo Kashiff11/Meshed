@@ -175,8 +175,8 @@ button {
   width: 20%;
   font-family: "Pridi", serif;
   font-size: large;
-  margin-top: 15%;
-  margin-left: 5%;
+  margin-top: 8%;
+  margin-left: 10%;
 }
 
 .introductionStyling {
@@ -307,7 +307,7 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 415px) {
   body {
     display: block;
   }
