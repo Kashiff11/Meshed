@@ -144,8 +144,10 @@ button {
 }
 
 .editSelectBar {
-  width: 20vw;
+  width: 400px;
   border-radius: 10px;
+  height: 45px;
+  margin-bottom: 30px;
 }
 
 .editDiv {
@@ -156,10 +158,14 @@ button {
   margin-top: 10%;
 }
 
+.editSubmitButton {
+  height: 50px;
+  width: 200px;
+}
+
 .introMainPage {
   display: grid;
   width: 100%;
-  height: 100%;
 }
 
 .personalLinks {
@@ -194,117 +200,6 @@ button {
   height: 50px;
   background-color: rgb(121, 0, 4);
   color: white;
-}
-
-@media screen and (max-width: 414px) {
-  body {
-    display: block;
-  }
-
-  .App {
-    display: block;
-  }
-
-  .navigationBar {
-    display: block;
-    width: 100%;
-    height: 10%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .websiteName {
-    display: block;
-    font-size: 10px;
-    font-weight: 700;
-    font-family: "Pridi", serif;
-    margin-left: 27px;
-    margin-top: 5px;
-  }
-
-  .button {
-    display: inline;
-    justify-content: space-around;
-    margin: 0px;
-    padding: 12px;
-  }
-  .main {
-    display: block;
-  }
-
-  .introMainPage {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .introIntroduction {
-    width: 100vw;
-    height: 50vw;
-    margin-top: 50px;
-  }
-
-  .introductionStyling {
-    color: white;
-    font-family: "Architects Daughter", cursive;
-    font-size: large;
-    width: 60%;
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-
-  .quoteStyle {
-    width: 80%;
-    margin-left: 20%;
-    margin-top: 20%;
-  }
-
-  .formContainer {
-    margin: auto;
-    width: 100vw;
-    height: 100vw;
-  }
-
-  .form {
-    font-size: 1rem;
-    font-family: "Pridi", serif;
-    width: 100vw;
-    margin-top: 10%;
-  }
-
-  input {
-    width: 80vw;
-    height: 8vw;
-    margin-top: 0.25%;
-  }
-
-  .selector {
-    width: 80vw;
-  }
-
-  .taskList {
-    margin: 0%;
-    width: 100vw;
-  }
-
-  .taskContainer {
-    margin: 5% auto;
-  }
-
-  .editFormContainer {
-    font-size: 1rem;
-    font-family: "Pridi", serif;
-    width: 100vw;
-  }
-
-  .editSelectBar {
-    width: 80vw;
-    height: 10vw;
-  }
-
-  .editSubmitButton {
-    height: 10vw;
-  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 415px) {
@@ -434,5 +329,129 @@ button {
 
   .labelToDoItem {
     margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    display: block;
+  }
+
+  .App {
+    display: block;
+    width: 98vw;
+    height: 98vh;
+  }
+
+  .navigationBar {
+    display: block;
+    width: 98vw;
+    height: 10vh;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .websiteName {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Pridi", serif;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+
+  .button {
+    display: inline;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 12px;
+  }
+  .main {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .introMainPage {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 98vw;
+  }
+
+  .introIntroduction {
+    margin-top: 50px;
+    width: 98vw;
+    height: 50vw;
+  }
+
+  .introductionStyling {
+    color: rgb(121, 0, 4);
+    font-family: "Architects Daughter", cursive;
+    font-size: large;
+    width: 60vw;
+    margin-left: 5%;
+  }
+
+  .introQuote {
+    width: 98vw;
+  }
+
+  .quoteStyle {
+    width: 80%;
+    margin: 20% auto;
+  }
+
+  .personalLinks {
+    height: 10%;
+    margin-left: 70vw;
+  }
+
+  .formContainer {
+    margin: auto;
+    width: 98vw;
+    height: 100vw;
+  }
+
+  .form {
+    font-size: 1rem;
+    font-family: "Pridi", serif;
+    width: 98vw;
+    margin-top: 20%;
+  }
+
+  input {
+    width: 80vw;
+    height: 8vw;
+    margin-top: 0.25%;
+  }
+
+  .selector {
+    width: 80vw;
+  }
+
+  .taskList {
+    margin: 0%;
+    margin-top: 25%;
+    width: 98vw;
+  }
+
+  .taskContainer {
+    margin: 5% auto;
+  }
+
+  .editFormContainer {
+    font-size: 1rem;
+    font-family: "Pridi", serif;
+    width: 98vw;
+    margin-top: 75px;
+  }
+
+  .editSelectBar {
+    width: 80vw;
+    height: 10vw;
+    margin-bottom: 40px;
+  }
+
+  .editSubmitButton {
+    height: 10vw;
   }
 }

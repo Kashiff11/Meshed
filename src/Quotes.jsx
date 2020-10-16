@@ -5,8 +5,8 @@ const Quotes = (props) => {
 
   return (
     <div className="quoteStyle">
-      <h4>{props.quote && props.quote.content}</h4>
-      <h4>{props.quote && props.quote.originator.name}</h4>
+      <h4 classname="quoteText">{props.quote && props.quote.content}</h4>
+      <h4 classname="quoteText">{props.quote && props.quote.originator.name}</h4>
     </div>
   );
 };
