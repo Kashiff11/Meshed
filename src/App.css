@@ -16,6 +16,7 @@ body {
 }
 
 .navigationBar {
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -38,6 +39,7 @@ body {
   align-items: center;
   height: 100%;
   width: 85%;
+  margin-left: 15%;
 }
 
 .button {
@@ -213,7 +215,7 @@ button {
 
   .websiteName {
     display: block;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: 700;
     font-family: "Pridi", serif;
     margin-left: 27px;
